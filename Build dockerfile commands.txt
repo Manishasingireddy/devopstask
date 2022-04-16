@@ -1,0 +1,15 @@
+Created a job in Jenkins and given these commands in Build step(Execute shell) 
+
+echo "Docker image is building"
+docker build -t my-web-app /home/ubuntu/ 
+
+echo "List of docker images in your machine" 
+docker images
+
+echo "Running container on background"
+docker run -d -it -p 80:80 my-web-app
+
+echo "Listing running containers"
+docker container ls
+
+
